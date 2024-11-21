@@ -39,6 +39,8 @@ This project uses the following technologies:
 - **JavaScript** for interactivity (e.g., form validation, animations).
 - **Vendor Libraries**:
   - AOS (Animate on Scroll)
-Here is my Live App: https://khozamauren.github.io/portfolio/
   - Glightbox
   - Typed.js
+
+##Link to my portfolio
+Live App: https://khozamauren.github.io/portfolio/
