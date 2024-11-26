@@ -43,4 +43,4 @@ This project uses the following technologies:
   - Typed.js
 
 ##Link to my portfolio
-Live App: https://khozamauren.github.io/portfolio/
+Live App: https://maurenk.github.io/portfolio/
