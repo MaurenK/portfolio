@@ -223,3 +223,39 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+function toggleChatbot() {
+  const chatbot = document.getElementById('chatbot');
+  chatbot.style.display = chatbot.style.display === 'flex' ? 'none' : 'flex';
+}
+
+function closechat() {
+  const closec = document.getElementById('chatbot');
+  closec.style.display =  closec.style.display === 'flex' ? 'none': 'flex';
+}
+
+// Send message to chatbot
+function sendMessage() {
+  const userInput = document.getElementById('user-input').value;
+  if (userInput.trim()) {
+    // Display user message
+    const userMessageDiv = document.createElement('div');
+    userMessageDiv.classList.add('message', 'user-message');
+    userMessageDiv.textContent = userInput;
+    document.getElementById('chatbot-body').appendChild(userMessageDiv);
+
+    // Display bot response
+    setTimeout(() => {
+      const botMessageDiv = document.createElement('div');
+      botMessageDiv.classList.add('message', 'bot-message');
+      botMessageDiv.textContent = "Hi! I'm Bob, Mauren's assistant. I'm always online and ready to help.";
+      document.getElementById('chatbot-body').appendChild(botMessageDiv);
+      
+      // Scroll to the bottom
+      document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
+    }, 500);
+
+    // Clear input field
+    document.getElementById('user-input').value = '';
+  }
+}

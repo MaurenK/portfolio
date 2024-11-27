@@ -845,3 +845,89 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
+
+/*--------------------------------------------------------------------------------
+# Chatbot
+---------------------------------------------------------------------------------*/
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+}
+
+#chatbot-header {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px 10px 0 0;
+}
+
+#chatbot-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+#chatbot-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#user-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#send-button {
+  background-color: #5500ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #2d00b3;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message.user-message {
+  text-align: right;
+}
+
+.message.bot-message {
+  text-align: left;
+  color: #5100ff;
+}
+
+#chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0044ff;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
