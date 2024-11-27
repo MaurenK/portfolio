@@ -26,7 +26,7 @@ The website is responsive, easy to navigate, and styled using modern web technol
 ## Features
 - **Hero Section**: Highlights my name, title, and a brief overview of my roles.
 - **About Section**: Detailed description of my background and aspirations.
-- **Skills Section**: A progress bar visualization of my skills and planned improvements.
+- **Skills Section**: A progress bar visualization of my skills(Technical & Soft) and planned improvements.
 - **Resume Section**: Summarizes my educational background and professional experience.
 - **Contact Section**: Includes a form to send messages directly to me.
 
