@@ -231,31 +231,60 @@ function toggleChatbot() {
 
 function closechat() {
   const closec = document.getElementById('chatbot');
-  closec.style.display =  closec.style.display === 'flex' ? 'none': 'flex';
+  closec.style.display = closec.style.display === 'flex' ? 'none' : 'flex';
 }
 
 // Send message to chatbot
 function sendMessage() {
-  const userInput = document.getElementById('user-input').value;
-  if (userInput.trim()) {
+  const userInput = document.getElementById('user-input').value.trim();
+
+  // Check if the user input is not empty
+  if (userInput) {
     // Display user message
     const userMessageDiv = document.createElement('div');
     userMessageDiv.classList.add('message', 'user-message');
     userMessageDiv.textContent = userInput;
     document.getElementById('chatbot-body').appendChild(userMessageDiv);
 
-    // Display bot response
+    // Determine the bot's response based on user input
     setTimeout(() => {
       const botMessageDiv = document.createElement('div');
       botMessageDiv.classList.add('message', 'bot-message');
-      botMessageDiv.textContent = "Hi! I'm Bob, Mauren's assistant. I'm always online and ready to help.";
-      document.getElementById('chatbot-body').appendChild(botMessageDiv);
       
+      let botResponse = "I'm not sure how to respond to that.";
+
+      // Check for specific user input and change the bot's response accordingly
+      if (userInput.includes("Hello")) {
+        botResponse = "Hi there! How can I assist you today?";
+      } else if (userInput.includes("help")) {
+        botResponse = "I'm here to help! What do you need assistance with?";
+      } else if (userInput.includes("bye")) {
+        botResponse = "Goodbye! Have a great day!";
+      } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
+        botResponse = "You're welcome! Let me know if you need anything else.";
+      } else if (userInput.includes("your name")) {
+        botResponse = "My name is Bob, Mauren's assistant. I'm here to help!";
+      }else if (userInput.includes("Tell me more about the profile")) {
+        botResponse = "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.";
+      } else if (userInput.includes("Where did you study?")) {
+        botResponse = "Vaal University of Technology.";
+      } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
+        botResponse = "You're welcome! Let me know if you need anything else.";
+      } else if (userInput.includes("Where can I find your social media or professional profiles?")){
+        botResponse = "When you click on Contacts, it will direct you to my contact details. Thank you";
+      }
+
+      // Display bot response
+      botMessageDiv.textContent = botResponse;
+      document.getElementById('chatbot-body').appendChild(botMessageDiv);
+
       // Scroll to the bottom
       document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
-    }, 500);
 
-    // Clear input field
+    }, 500); // Delay before bot response
+
+    // Clear the input field after sending the message
     document.getElementById('user-input').value = '';
   }
 }
+
