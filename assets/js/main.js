@@ -267,7 +267,8 @@ function sendMessage() {
         "tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
         "links": "click any icon below my profile picture and it will redirect you.",
         "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
-        "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo."
+        "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo.",
+        "education": "Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa."
       };
 
       // Loop through the responses object to match user input with keywords
