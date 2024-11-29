@@ -45,5 +45,5 @@ This project uses the following technologies:
   ## Chatbot
   -It is case-sensetive, please make sure that for every sentence you type you must start with a capital letter.
 
-##Link to my portfolio
-Live App: https://maurenk.github.io/portfolio/
+## Link to my portfolio
+-Live App: https://maurenk.github.io/portfolio/
