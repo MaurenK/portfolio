@@ -234,9 +234,9 @@ function closechat() {
   closec.style.display = closec.style.display === 'flex' ? 'none' : 'flex';
 }
 
-// Send message to chatbot
+// Function to send message to chatbot
 function sendMessage() {
-  const userInput = document.getElementById('user-input').value.trim();
+  const userInput = document.getElementById('user-input').value.trim().toLowerCase(); // Normalize input to lowercase
 
   // Check if the user input is not empty
   if (userInput) {
@@ -251,34 +251,38 @@ function sendMessage() {
       const botMessageDiv = document.createElement('div');
       botMessageDiv.classList.add('message', 'bot-message');
       
-      let botResponse = "I'm not sure how to respond to that.";
+      let botResponse = "I'm not sure how to respond to that."; // Default response
 
-      // Check for specific user input and change the bot's response accordingly
-      if (userInput.includes("Hello")) {
-        botResponse = "Hi there! How can I assist you today?";
-      } else if (userInput.includes("help")) {
-        botResponse = "I'm here to help! What do you need assistance with?";
-      } else if (userInput.includes("bye")) {
-        botResponse = "Goodbye! Have a great day!";
-      } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
-        botResponse = "You're welcome! Let me know if you need anything else.";
-      } else if (userInput.includes("your name")) {
-        botResponse = "My name is Bob, Mauren's assistant. I'm here to help!";
-      }else if (userInput.includes("Tell me more about the profile")) {
-        botResponse = "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.";
-      } else if (userInput.includes("Where did you study?")) {
-        botResponse = "Vaal University of Technology.";
-      } else if (userInput.includes("thank you") || userInput.includes("thanks")) {
-        botResponse = "You're welcome! Let me know if you need anything else.";
-      } else if (userInput.includes("Where can I find your social media or professional profiles?")){
-        botResponse = "When you click on Contacts, it will direct you to my contact details. Thank you";
+      // Define keyword-response pairs (case-insensitive)
+      const responses = {
+        "hello": "Hi there! How can I assist you today?",
+        "hey": "Hi there! How can I assist you today?",
+        "hi": "Hi there! How can I assist you today?",
+        "help": "I'm here to help! What do you need assistance with?",
+        "bye": "Goodbye! Have a great day!",
+        "thank you": "You're welcome! Let me know if you need anything else.",
+        "skills": "some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
+        "thanks": "You're welcome! Let me know if you need anything else.",
+        "name": "My name is Bob, Mauren's assistant. I'm here to help!",
+        "tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
+        "links": "click any icon below my profile picture and it will redirect you.",
+        "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
+        "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo."
+      };
+
+      // Loop through the responses object to match user input with keywords
+      for (let keyword in responses) {
+        if (userInput.includes(keyword)) {
+          botResponse = responses[keyword];
+          break; // Exit the loop once a match is found
+        }
       }
 
-      // Display bot response
+      // Display the bot response
       botMessageDiv.textContent = botResponse;
       document.getElementById('chatbot-body').appendChild(botMessageDiv);
 
-      // Scroll to the bottom
+      // Scroll to the bottom of the chat
       document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
 
     }, 500); // Delay before bot response
@@ -288,3 +292,9 @@ function sendMessage() {
   }
 }
 
+// Event listener to allow "Enter" key to send the message
+document.getElementById('user-input').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    sendMessage(); // Trigger the sendMessage function when Enter is pressed
+  }
+});
