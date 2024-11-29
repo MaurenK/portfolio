@@ -26,7 +26,7 @@ The website is responsive, easy to navigate, and styled using modern web technol
 ## Features
 - **Hero Section**: Highlights my name, title, and a brief overview of my roles.
 - **About Section**: Detailed description of my background and aspirations.
-- **Skills Section**: A progress bar visualization of my skills and planned improvements.
+- **Skills Section**: A progress bar visualization of my skills(Technical & Soft) and planned improvements.
 - **Resume Section**: Summarizes my educational background and professional experience.
 - **Contact Section**: Includes a form to send messages directly to me.
 
@@ -41,6 +41,9 @@ This project uses the following technologies:
   - AOS (Animate on Scroll)
   - Glightbox
   - Typed.js
+ 
+  ## Chatbot
+  -It is case-sensetive, please make sure that for every sentence you type you must start with a capital letter.
 
-##Link to my portfolio
-Live App: https://maurenk.github.io/portfolio/
+## Link to my portfolio
+-Live App: https://maurenk.github.io/portfolio/
