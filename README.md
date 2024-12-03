@@ -44,6 +44,18 @@ This project uses the following technologies:
  
   ## Chatbot
   -It is case-insensetive, please make sure that for every sentence you type you must start with a capital letter.
+  ## Keyword-Response Mappings
+Here are some of the predefined keyword-response pairs in the chatbot:
+
+"hello": "Hi there! How can I assist you today?"
+"help": "I'm here to help! What do you need assistance with?"
+"bye": "Goodbye! Have a great day!"
+"thank you": "You're welcome! Let me know if you need anything else."
+"skills": "Some of the soft skills that Mauren poses are good communication and technical skills."
+"contact": "To get a hold of Mauren, email her at khozamauren@gmail.com or navigate to the About/Contact page for further information."
+"joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo."
+"experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume."
+
 
 ## Link to my portfolio
 -Live App: https://maurenk.github.io/portfolio/
