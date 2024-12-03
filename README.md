@@ -43,7 +43,7 @@ This project uses the following technologies:
   - Typed.js
  
   ## Chatbot
-  -It is case-insensetive, please make sure that for every sentence you type you must start with a capital letter.
+  -It is case-insensetive
   ## Keyword-Response Mappings
 Here are some of the predefined keyword-response pairs in the chatbot:
 
