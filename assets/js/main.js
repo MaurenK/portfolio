@@ -269,7 +269,8 @@ function sendMessage() {
         "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
         "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo.",
         "education": "Mauren studied at the Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa.",
-        "experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume."
+        "experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume.",
+        "profile" : "The portfolio page is designed to showcase Mauren Khoza’s professional profile, skills, education, and work experience, while also offering potential collaborators or employers a means to contact him directly through the form or chatbot. It's built with modern web technologies (HTML, CSS, JavaScript) and is structured to highlight both technical and soft skills, providing an overview of his career and achievements in a clean, user-friendly layout."
       };
 
       // Loop through the responses object to match user input with keywords
