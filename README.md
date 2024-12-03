@@ -43,7 +43,7 @@ This project uses the following technologies:
   - Typed.js
  
   ## Chatbot
-  -It is case-sensetive, please make sure that for every sentence you type you must start with a capital letter.
+  -It is case-insensetive, please make sure that for every sentence you type you must start with a capital letter.
 
 ## Link to my portfolio
 -Live App: https://maurenk.github.io/portfolio/
