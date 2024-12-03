@@ -268,8 +268,8 @@ function sendMessage() {
         "links": "Click any icon below my profile picture and it will redirect you.",
         "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
         "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo.",
-        "education": "I studied at the Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa.",
-        "experience": "I worked in a few companies and I did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume."
+        "education": "Mauren studied at the Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa.",
+        "experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume."
       };
 
       // Loop through the responses object to match user input with keywords
