@@ -47,22 +47,22 @@ This project uses the following technologies:
   ## Keyword-Response Mappings
 Here are some of the predefined keyword-response pairs in the chatbot:
 
-"hello": "Hi there! How can I assist you today?",
-"hey": "Hi there! How can I assist you today?",
-"hi": "Hi there! How can I assist you today?",
-"help": "I'm here to help! What do you need assistance with?",
-"bye": "Goodbye! Have a great day!",
-"thank you": "You're welcome! Let me know if you need anything else.",
-"skills": "Some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
-"thanks": "You're welcome! Let me know if you need anything else.",
-"name": "My name is Bob, Mauren's assistant. I'm here to help!",
-"tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
-"links": "Click any icon below my profile picture and it will redirect you.",
-"contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
-"joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo.",
-"education": "Mauren studied at the Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa.",
-"experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume.",
-"profile" : "The portfolio page is designed to showcase Mauren Khoza’s professional profile, skills, education, and work experience, while also offering potential collaborators or employers a means to contact him directly through the form or chatbot. It's built with modern web technologies (HTML, CSS, JavaScript) and is structured to highlight both technical and soft skills, providing an overview of his career and achievements in a clean, user-friendly layout."
+-  "hello": "Hi there! How can I assist you today?",
+-  "hey": "Hi there! How can I assist you today?",
+-  "hi": "Hi there! How can I assist you today?",
+-  "help": "I'm here to help! What do you need assistance with?",
+-  "bye": "Goodbye! Have a great day!",
+-  "thank you": "You're welcome! Let me know if you need anything else.",
+-  "skills": "Some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
+-  "thanks": "You're welcome! Let me know if you need anything else.",
+-  "name": "My name is Bob, Mauren's assistant. I'm here to help!",
+-  "tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
+-  "links": "Click any icon below my profile picture and it will redirect you.",
+-  "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
+-  "joke": "What do rich people say when they tickle babies? Gucci, Gucci, goo.",
+-  "education": "Mauren studied at the Vaal University of Technology, Vanderbijlpark,Johannesburg , South Africa.",
+-  "experience": "Mauren worked in a few companies and she did a learnership at Impactful Specialist Solutions and an intership at Department of Home Affairs. For more information click on resume.",
+-  "profile" : "The portfolio page is designed to showcase Mauren Khoza’s professional profile, skills, education, and work experience, while also offering potential collaborators or employers a means to contact him directly through the form or chatbot. It's built with modern web technologies (HTML, CSS, JavaScript) and is structured to highlight both technical and soft skills, providing an overview of his career and achievements in a clean, user-friendly layout."
 
 
 ## Link to my portfolio
