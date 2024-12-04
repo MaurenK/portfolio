@@ -256,6 +256,7 @@ function sendMessage() {
       // Define keyword-response pairs (case-insensitive)
       const responses = {
         "hello": "Hi there! How can I assist you today?",
+        "how are you": "im great thanks and you?",
         "hey": "Hi there! How can I assist you today?",
         "hi": "Hi there! How can I assist you today?",
         "help": "I'm here to help! What do you need assistance with?",
@@ -277,7 +278,7 @@ function sendMessage() {
       for (let keyword in responses) {
         if (userInput.includes(keyword)) {
           botResponse = responses[keyword];
-          break; // Exit the loop once a match is found
+          break; 
         }
       }
 
@@ -289,6 +290,8 @@ function sendMessage() {
       document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
 
     }, 500); // Delay before bot response
+
+    
 
     // Clear the input field after sending the message
     document.getElementById('user-input').value = '';
