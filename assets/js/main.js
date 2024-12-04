@@ -245,7 +245,7 @@ function sendMessage() {
     userMessageDiv.classList.add('message', 'user-message');
     userMessageDiv.textContent = userInput;
     document.getElementById('chatbot-body').appendChild(userMessageDiv);
-
+    
     // Determine the bot's response based on user input
     setTimeout(() => {
       const botMessageDiv = document.createElement('div');
@@ -304,3 +304,13 @@ document.getElementById('user-input').addEventListener('keypress', function(even
     sendMessage(); // Trigger the sendMessage function when Enter is pressed
   }
 });
+// Automatically send a message when the chatbot is opened
+window.onload = function() {
+  const botMessageDiv = document.createElement('div');
+  botMessageDiv.classList.add('message', 'bot-message');
+  botMessageDiv.textContent = "Hi! How can I help you today?";
+  document.getElementById('chatbot-body').appendChild(botMessageDiv);
+
+  // Scroll to the bottom of the chat
+  document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
+};

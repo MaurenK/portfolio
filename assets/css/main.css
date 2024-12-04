@@ -837,6 +837,7 @@ section,
 
 #chatbot-body {
   flex: 1;
+  overflow-y: auto;
   flex-direction: column;
   display: flex;
   padding: 10px;
@@ -895,6 +896,7 @@ section,
   border: 2px solid #ccc;    
   align-self: flex-start; 
 }
+
 
 #chatbot-toggle {
   position: fixed;
