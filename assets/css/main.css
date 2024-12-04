@@ -829,7 +829,7 @@ section,
 }
 
 #chatbot-header {
-  background-color: purple;
+  background-color: rgb(0, 98, 255);
   color: white;
   padding: 10px;
   text-align: center;
@@ -861,7 +861,7 @@ section,
 }
 
 #send-button {
-  background-color: #5500ff;
+  background-color: rgb(0, 98, 255);
   color: white;
   border: none;
   border-radius: 5px;
@@ -870,7 +870,7 @@ section,
 }
 
 #send-button:hover {
-  background-color: #2d00b3;
+  background-color: rgb(0, 98, 255);
 }
 
 .message {
@@ -883,7 +883,7 @@ section,
 
 .message.bot-message {
   text-align: left;
-  color: #5100ff;
+  color: rgb(0, 98, 255);
 }
 
 #chatbot-toggle {
