@@ -245,7 +245,7 @@ function sendMessage() {
     userMessageDiv.classList.add('message', 'user-message');
     userMessageDiv.textContent = userInput;
     document.getElementById('chatbot-body').appendChild(userMessageDiv);
-
+    
     // Determine the bot's response based on user input
     setTimeout(() => {
       const botMessageDiv = document.createElement('div');
@@ -256,6 +256,7 @@ function sendMessage() {
       // Define keyword-response pairs (case-insensitive)
       const responses = {
         "hello": "Hi there! How can I assist you today?",
+        "how are you": "im great thanks and you?",
         "hey": "Hi there! How can I assist you today?",
         "hi": "Hi there! How can I assist you today?",
         "help": "I'm here to help! What do you need assistance with?",
@@ -263,7 +264,7 @@ function sendMessage() {
         "thank you": "You're welcome! Let me know if you need anything else.",
         "skills": "Some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
         "thanks": "You're welcome! Let me know if you need anything else.",
-        "name": "My name is Bob, Mauren's assistant. I'm here to help!",
+        "name": "My name is Tom, Mauren's assistant. I'm here to help!",
         "tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
         "links": "Click any icon below my profile picture and it will redirect you.",
         "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
@@ -277,7 +278,7 @@ function sendMessage() {
       for (let keyword in responses) {
         if (userInput.includes(keyword)) {
           botResponse = responses[keyword];
-          break; // Exit the loop once a match is found
+          break; 
         }
       }
 
@@ -290,6 +291,8 @@ function sendMessage() {
 
     }, 500); // Delay before bot response
 
+    
+
     // Clear the input field after sending the message
     document.getElementById('user-input').value = '';
   }
@@ -301,3 +304,13 @@ document.getElementById('user-input').addEventListener('keypress', function(even
     sendMessage(); // Trigger the sendMessage function when Enter is pressed
   }
 });
+// Automatically send a message when the chatbot is opened
+window.onload = function() {
+  const botMessageDiv = document.createElement('div');
+  botMessageDiv.classList.add('message', 'bot-message');
+  botMessageDiv.textContent = "Hi! How can I help you today?";
+  document.getElementById('chatbot-body').appendChild(botMessageDiv);
+
+  // Scroll to the bottom of the chat
+  document.getElementById('chatbot-body').scrollTop = document.getElementById('chatbot-body').scrollHeight;
+};

@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #dd14d6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -32,9 +32,7 @@
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+ 
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -829,16 +827,19 @@ section,
 }
 
 #chatbot-header {
-  background-color: rgb(0, 98, 255);
-  color: white;
+  background-color: #dd14d6; 
+  color: white;           
   padding: 10px;
   text-align: center;
   font-size: 16px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;  
 }
 
 #chatbot-body {
   flex: 1;
+  overflow-y: auto;
+  flex-direction: column;
+  display: flex;
   padding: 10px;
   overflow-y: auto;
   background-color: #f1f1f1;
@@ -847,7 +848,7 @@ section,
 #chatbot-footer {
   display: flex;
   padding: 10px;
-  background-color: #fff;
+  background-color: #dd14d6;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -861,7 +862,7 @@ section,
 }
 
 #send-button {
-  background-color: rgb(0, 98, 255);
+  background-color: #dd14d6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -870,30 +871,41 @@ section,
 }
 
 #send-button:hover {
-  background-color: rgb(0, 98, 255);
+  background-color: #dd14d6;
 }
 
 .message {
-  margin-bottom: 10px;
+  padding: 10px;              /* Padding inside the message bubble */
+  margin: 5px 0;              /* Space between messages */
+  border-radius: 10px;        /* Rounded corners */
+  font-size: 16px;            /* Font size for the text */
+  max-width: 80%;             /* Limit the message width */
+  word-wrap: break-word;      /* Wrap long words */
 }
+
 
 .message.user-message {
-  text-align: right;
+  background-color: #d0a3db; 
+  border: 2px solid #d0a3db; 
+  align-self: flex-end;          
 }
 
+
 .message.bot-message {
-  text-align: left;
-  color: rgb(0, 98, 255);
+  background-color: #f7f7f7; 
+  border: 2px solid #ccc;    
+  align-self: flex-start; 
 }
+
 
 #chatbot-toggle {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0044ff;
+  background-color: #dd14d6;
   color: white;
   border-radius: 50%;
   padding: 15px;
-  cursor: pointer;
+  cursor: auto;
   font-size: 24px;
 }
