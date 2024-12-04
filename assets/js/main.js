@@ -260,6 +260,7 @@ function sendMessage() {
         "hey": "Hi there! How can I assist you today?",
         "hi": "Hi there! How can I assist you today?",
         "help": "I'm here to help! What do you need assistance with?",
+        "CV" : "You can download the CV under the Resume",
         "bye": "Goodbye! Have a great day!",
         "thank you": "You're welcome! Let me know if you need anything else.",
         "skills": "Some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
