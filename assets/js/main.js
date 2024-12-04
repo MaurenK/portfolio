@@ -264,7 +264,7 @@ function sendMessage() {
         "thank you": "You're welcome! Let me know if you need anything else.",
         "skills": "Some of the the soft skills that Mauren poses are good communication and technical skills:CSS navigate to the skills page for more information.",
         "thanks": "You're welcome! Let me know if you need anything else.",
-        "name": "My name is Bob, Mauren's assistant. I'm here to help!",
+        "name": "My name is Tom, Mauren's assistant. I'm here to help!",
         "tell me more about the profile": "Motivated IT professional with a Diploma in Information Technology, specialising in Software Development. Skilled in designing, coding, and testing software applications, with proficiency in languages such as Java and Python.",
         "links": "Click any icon below my profile picture and it will redirect you.",
         "contact": "To get a hold of Mauren email her at khozamauren@gmail.com or navigate to the About/Contact page for further information",
